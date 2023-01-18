@@ -7,11 +7,11 @@ function userData(userInfo){
     const img=document.getElementById('userimg');
     console.log(userInfo);
     h1.innerText=`${userInfo.results[0].name.title} ${userInfo.results[0].name.first} ${userInfo.results[0].name.last}`;
-
     img.src=`${userInfo.results[0].picture.large}`;
     console.log(img)
 }
 
+// This code for browser Reload
 setInterval(() => {
     location.reload()
 }, 3000);
